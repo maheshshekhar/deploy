@@ -40,6 +40,14 @@
     8. ) Under Manage Plugins Install AWS Code Deploy Plugin and GIT as shown in the below fig.
    ![Upload_Pic](https://github.com/maheshshekhar/deploy/blob/master/git.png)
    ![Upload_Pic](https://github.com/maheshshekhar/deploy/blob/master/awscd.png)
-    
+  
+3: In you github add the webhook to the Jenkins EC2 Server.
+   ![Upload_Pic](https://github.com/maheshshekhar/deploy/blob/master/github.png)
+ 
+4: On you AWS Console create an AWS Code Deploy Application
+   
+    1. ) Provide the Application Name, Deployment Group, The instance on which the application should run.
+
+5: We have an appsec.yml file which will tell you
 
 
