@@ -1,28 +1,31 @@
-# htmldeploy
-Instructions
+# Deploying a Web Application using AWS Code Deploy
 
-1.) When server is booted run the following commands as root.
+1: On you EC2 Instance install the below aws code deploy agent.
 
-yum -y update
+    1.) When server is booted run the following commands as root.
 
-yum install -y aws-cli
+        yum -y update
 
-cd /home/ec2-user
+        yum install -y aws-cli
 
-2.) Here you will setup your AWS access, secret, and region.
+        cd /home/ec2-user
 
-aws configure
+    2.) Here you will setup your AWS access, secret, and region.
 
-wget https://aws-codedeploy-ap-southeast-1.s3.amazonaws.com/latest/install
+        aws configure
 
-chmod +x ./install
+        wget https://aws-codedeploy-ap-southeast-1.s3.amazonaws.com/latest/install
 
-3.) This is simply a quick hack to get the agent running faster.
+        chmod +x ./install
 
-sed -i "s/sleep(.*)/sleep(10)/" install
+    3.) This is simply a quick hack to get the agent running faster.
 
-./install auto
+        sed -i "s/sleep(.*)/sleep(10)/" install
 
-4.) Verify it is running.
+        ./install auto
 
-service codedeploy-agent status
+    4.) Verify it is running.
+
+        service codedeploy-agent status
+
+
