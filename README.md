@@ -37,5 +37,7 @@
     5. ) service jenkins start
     6. ) chkconfig jenkins on (to start jenkins whenever the server restarts)
     7. ) Navigate to http://<EC2 PUBLIC IP>:8080
+    8. ) Under Manage Plugins Install AWS Code Deploy Plugin and GIT.
+    9. ) 
 
 
