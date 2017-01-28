@@ -48,6 +48,5 @@
    
     1. ) Provide the Application Name, Deployment Group, The instance on which the application should run.
 
-5: We have an appsec.yml file which will tell you
-
+5: We have an appsec.yml file which will provides the details to the server. It provides the list of application needs to be installed using the scripts
 
