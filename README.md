@@ -27,5 +27,15 @@
     4.) Verify it is running.
 
         service codedeploy-agent status
+ 
+2: On another EC2 Instance Install Jenkins as below:
+    
+    1. ) wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+    2. ) rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+    3. ) yum install jenkins
+    4. ) yum install git
+    5. ) service jenkins start
+    6. ) chkconfig jenkins on (to start jenkins whenever the server restarts)
+    7. ) Navigate to http://<EC2 PUBLIC IP>:8080
 
 
